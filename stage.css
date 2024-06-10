@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, pink, white);
+    padding: 10px;
+}
+.todo{
+    
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+
+}
+.todo h2{
+    
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo h2 img{
+    width: 60px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(240, 204, 204);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    font-weight: 25px;
+    color: black;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(243, 169, 169);
+    color: rgb(1, 1, 1);
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+ul li{
+    list-style:none;
+    font-size: 17px;
+    padding: 15px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 30px;
+    background-image: url('https://brandeps.com/icon-download/R/Radio-button-off-icon-02.png');
+    background-size: cover;
+    background-position: center;
+    margin-left: -40px;
+}
+ul li.checked{
+    color: pink;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url('https://static.thenounproject.com/png/195060-200.png');
+
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: pink;
+}
